@@ -1,0 +1,7 @@
+- type: entity
+  id: BaseSecuritySalvageContraband
+  parent: BaseRestrictedContraband
+  abstract: true
+  components:
+  - type: Contraband
+    allowedDepartments: [ Security, Salvage ]

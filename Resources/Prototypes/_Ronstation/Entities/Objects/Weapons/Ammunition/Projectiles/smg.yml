@@ -1,0 +1,22 @@
+- type: entity
+  id: BulletSMG
+  name: bullet (.22 auto)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 12
+
+- type: entity
+  id: BulletSMGPractice
+  name: bullet (.22 auto practice)
+  parent: BaseBulletPractice
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 2
+

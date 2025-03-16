@@ -1,0 +1,52 @@
+- type: entity
+  name: Pioneer
+  parent: [BaseWeaponSubMachineGun, BaseSecuritySalvageContraband]
+  id: WeaponSubMachineGunPioneer
+  description: A version of the Drodz for civilian use. The weaker caliber makes it much easier to handle then it's military-grade counterpart.
+  components:
+    - type: Sprite
+      sprite: _Ronstation/Objects/Weapons/Guns/SMGs/pioneer.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-0
+          map: ["enum.GunVisualLayers.Mag"]
+    - type: Clothing
+      sprite: _Ronstation/Objects/Weapons/Guns/SMGs/pioneer.rsi
+    - type: Gun
+      minAngle: 3
+      maxAngle: 12
+      fireRate: 6
+      burstFireRate: 12
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Gunshots/atreides.ogg
+      availableModes:
+      - Burst
+      - FullAuto
+      - SemiAuto
+      shotsPerBurst: 3
+      burstCooldown: 0.25
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: MagazineSMG
+          insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - MagazineSMG
+          whitelistFailPopup: gun-magazine-whitelist-fail
+        gun_chamber:
+          name: Chamber
+          startingItem: CartridgeSMG
+          priority: 1
+          whitelist:
+            tags:
+              - CartridgeSMG
+    - type: MagazineVisuals
+      magState: mag
+      steps: 1
+      zeroVisible: true
+    - type: Appearance
