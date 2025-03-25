@@ -1,0 +1,53 @@
+- type: entity
+  parent: [BaseItem, BaseGrandTheftContraband]
+  id: EnvelopeNukeCodes
+  name: self-destruct code envelope
+  description: A small, menacing envelope, containing the codes to the station's nuclear fission explosive. Open only in the worst of scenarios.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Sprite
+    sprite: _Ronstation/Objects/Misc/nukeenvelope.rsi
+    state: icon
+  - type: SpawnItemsOnUse
+    items:
+      - id: EnvelopeNukeCodesTorn
+      - id: NukeCodePaperHoS
+    sound:
+      path: /Audio/Effects/packetrip.ogg
+  - type: Tag
+    tags:
+    - HighRiskItem
+  - type: StealTarget
+    stealGroup: NukeCodes
+ 
+- type: entity
+  parent: BaseItem
+  id: EnvelopeNukeCodesTorn
+  name: opened self-destruct code envelope
+  description: The most worrying piece of garbage you've ever seen.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Sprite
+    sprite: _Ronstation/Objects/Misc/nukeenvelope.rsi
+    state: trash
+
+
+- type: entity
+  parent: [Paper, BaseGrandTheftContraband]
+  id: NukeCodePaperHoS
+  name: nuclear authentication codes
+  description: The codes to the station's nuclear fission explosive.
+  suffix: Station Only, Steal Target
+  components:
+  - type: Sprite
+    sprite: _Ronstation/Objects/Misc/nukeenvelope.rsi
+    state: paper
+  - type: NukeCodePaper
+  - type: StealTarget
+    stealGroup: NukeCodes
+  - type: Tag
+    tags:
+    - HighRiskItem
+

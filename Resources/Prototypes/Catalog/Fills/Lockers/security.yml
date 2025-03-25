@@ -5,6 +5,7 @@
   components:
   - type: StorageFill
     contents:
+      - id: WeaponEnergyShotgun
       - id: FlashlightSeclite
       - id: WeaponDisabler
       - id: ClothingBeltSecurityFilled
@@ -33,6 +34,7 @@
   components:
   - type: StorageFill
     contents:
+      - id: WeaponEnergyShotgun
       - id: FlashlightSeclite
       - id: WeaponDisabler
       - id: ClothingBeltSecurityFilled

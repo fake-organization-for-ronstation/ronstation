@@ -317,7 +317,8 @@
   id: LockerFillHeadOfSecurityNoHardsuit
   table: !type:AllSelector
     children:
-    - id: WeaponEnergyShotgun
+    - id: EnergySabre
+    - id: EnvelopeNukeCodes
     - id: BookSpaceLaw
     - id: BoxEncryptionKeySecurity
     - id: CigarGoldCase

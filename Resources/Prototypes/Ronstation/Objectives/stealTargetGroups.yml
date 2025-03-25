@@ -6,3 +6,16 @@
     sprite: Objects/Misc/module.rsi
     state: cpuboard
 
+- type: stealTargetGroup
+  id: WeaponEnergySabre
+  name: steal-target-groups-weapon-energy-sabre
+  sprite:
+    sprite: _Ronstation/Objects/Weapons/Melee/e_sabre.rsi
+    state: icon
+
+- type: stealTargetGroup
+  id: NukeCodes
+  name: steal-target-groups-nuke-code
+  sprite:
+    sprite: _Ronstation/Objects/Misc/nukeenvelope.rsi
+    state: icon

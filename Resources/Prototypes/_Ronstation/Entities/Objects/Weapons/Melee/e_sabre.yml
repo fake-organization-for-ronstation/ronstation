@@ -1,0 +1,27 @@
+- type: entity
+  name: energy sabre
+  parent: [BaseMeleeWeaponEnergy, BaseGrandTheftContraband]
+  id: EnergySabre
+  description: A sword with a beam made of pure, concentrated plasma, custom-made for the Head of Security. Cuts through passengers like butter.
+  components:
+  - type: Sprite
+    sprite: _Ronstation/Objects/Weapons/Melee/e_sabre.rsi
+    layers:
+    - state: e_sabre
+    - state: e_sabre_blade
+      color: "#FFFFFF"
+      visible: false
+      shader: unshaded
+      map: [ "blade" ]
+  - type: Item
+    sprite: _Ronstation/Objects/Weapons/Melee/e_sabre-inhands.rsi
+  - type: Tag
+    tags:
+    - HighRiskItem
+  - type: StealTarget
+    stealGroup: WeaponEnergySabre
+  - type: ItemToggleMeleeWeapon
+    activatedDamage:
+        types:
+            Slash: 15
+            Heat: 15

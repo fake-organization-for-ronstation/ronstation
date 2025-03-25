@@ -199,13 +199,13 @@
   id: EnergyShotgunStealObjective
   components:
   - type: Objective
-    # HoS will have this on them a lot of the time so..
+    # ward will have this on them a lot of the time so..
     difficulty: 3
   - type: NotJobRequirement
-    job: HeadOfSecurity
+    job: Warden
   - type: StealCondition
     stealGroup: WeaponEnergyShotgun
-    owner: job-name-hos
+    owner: job-name-warden
 
 ## ce
 
