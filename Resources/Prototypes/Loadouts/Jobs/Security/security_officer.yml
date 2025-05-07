@@ -168,3 +168,19 @@
   storage:
     back:
     - Dinkystar
+
+# Pistol
+- type: loadout
+  id: SecurityPistol
+  equipment:
+    pocket1: WeaponPistolMk58
+
+- type: loadout
+  id: SeniorOfficerPistol
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SeniorOfficer
+  equipment:
+    pocket1: WeaponPistolMk57
+
+

@@ -164,6 +164,17 @@
   equipment:
     id: SeniorPhysicianPDA
 
+# Equipment
+
+- type: loadout
+  id: SeniorPhysicianMinihypo
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SeniorPhysician
+  storage:
+    back:
+    - Minihypo
+
 # Gloves
 - type: loadout
   id: NitrileGloves

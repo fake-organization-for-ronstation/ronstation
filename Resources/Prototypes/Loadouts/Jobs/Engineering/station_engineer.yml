@@ -116,6 +116,21 @@
   equipment:
     shoes: ClothingShoesBootsWinterEngi
 
+# Belt
+- type: loadout
+  id: StationEngineerEquipment
+  equipment:
+    belt: ClothingBeltUtilityEngineering
+
+- type: loadout
+  id: SeniorEngineerEquipment
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SeniorEngineering
+  equipment:
+    belt: ClothingBeltSeniorEngineerFilled
+
+
 # ID
 - type: loadout
   id: StationEngineerPDA

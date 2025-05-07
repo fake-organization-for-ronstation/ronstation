@@ -1,0 +1,36 @@
+- type: entity
+  name: Minihypo
+  parent: [BaseItem, BaseMedicalContraband]
+  description: For rapid administration of small amounts of drugs to patients.
+  id: minihypo
+  components:
+  - type: Sprite
+    sprite: Ronstation/Objects/Specific/Medical/hypospray.rsi
+    layers:
+      - state: hypo
+        map: ["enum.SolutionContainerLayers.Base"]
+      - state: hypo_fill1
+        map: ["enum.SolutionContainerLayers.Fill"]
+        visible: false
+  - type: Item
+    sprite: Ronstation/Objects/Specific/Medical/hypospray.rsi
+    storedRotation: -90
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 10
+  - type: RefillableSolution
+    solution: hypospray
+  - type: ExaminableSolution
+    solution: hypospray
+  - type: Hypospray
+    transferAmount: 2
+    onlyAffectsMobs: false
+  - type: UseDelay
+    delay: 0.5
+  - type: StaticPrice
+    price: 500
+  - type: SolutionContainerVisuals
+    maxFillLevels: 5
+    fillBaseName: hypo_fill
+    solutionName: hypospray

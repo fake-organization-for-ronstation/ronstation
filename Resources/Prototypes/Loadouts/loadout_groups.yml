@@ -782,6 +782,13 @@
   - EngineeringWinterBoots
 
 - type: loadoutGroup
+  id: StationEngineerEquipment
+  name: loadout-group-station-engineer-equipment
+  loadouts:
+  - StationEngineerEquipment
+  - SeniorEngineerEquipment
+
+- type: loadoutGroup
   id: StationEngineerID
   name: loadout-group-station-engineer-id
   loadouts:
@@ -1061,6 +1068,13 @@
   - SeniorOfficerPDA
 
 - type: loadoutGroup
+  id: SecurityEquipment
+  name: loadout-group-security-equipment
+  loadouts:
+  - SecurityPistol
+  - SeniorOfficerPistol
+
+- type: loadoutGroup
   id: DetectiveHead
   name: loadout-group-detective-head
   minLimit: 0
@@ -1212,6 +1226,13 @@
   loadouts:
   - MedicalDoctorPDA
   - SeniorPhysicianPDA
+
+- type: loadoutGroup
+  id: MedicalDoctorEquipment
+  name: loadout-group-medical-doctor-equipment
+  minLimit: 0
+  loadouts:
+  - SeniorPhysicianMinihypo
 
 - type: loadoutGroup
   id: MedicalGloves

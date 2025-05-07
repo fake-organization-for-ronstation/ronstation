@@ -275,6 +275,7 @@
   - StationEngineerBackpack
   - StationEngineerOuterClothing
   - StationEngineerShoes
+  - StationEngineerEquipment
   - StationEngineerID
   - SurvivalExtended
   - Trinkets
@@ -377,6 +378,7 @@
   - SecurityShoes
   - SecurityPDA
   - SecurityBelt
+  - SecurityEquipment
   - SurvivalSecurity
   - Trinkets
   - SecurityStar
@@ -439,6 +441,7 @@
   - SurvivalMedical
   - Trinkets
   - GroupSpeciesBreathToolMedical
+  - MedicalDoctorEquipment
 
 - type: roleLoadout
   id: JobMedicalIntern
